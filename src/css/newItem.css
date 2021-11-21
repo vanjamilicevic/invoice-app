@@ -1,0 +1,82 @@
+
+.add-new-item-container-new-item {
+
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+ 
+.input-new-item-name,
+.input-new-item-qty,
+.input-new-item-price {
+
+    border-radius: 3px;
+    border: 1px solid #d9d2f8;
+    padding: 10px 10px 10px 10px;
+    font-family: "Spartan";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+
+.input-new-item-name {
+
+    width: 190px;
+}
+
+.input-new-item-qty {
+
+    width: 35px;
+    margin-left: 18px;  
+}
+
+.input-new-item-price {
+
+    width: 60px;
+    margin-left: 18px; 
+}
+
+.input-new-item-price::placeholder {
+
+    color: #0C0E16;
+    opacity: 0.3;
+}
+
+.total-new-item {
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: #888EB0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.fas {
+
+    color: #888EB0;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .input-new-item-name {
+
+        width: 70px;
+    }
+
+    .input-new-item-qty {
+
+        width: 30px;
+    }
+
+    .input-new-item-price {
+
+        width: 30px;
+    }
+
+    .add-new-item-container-new-item {
+
+        justify-content: space-between;
+    }
+}

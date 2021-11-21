@@ -1,0 +1,607 @@
+
+.go-back-container {
+
+    display: none;
+}
+ 
+.new-invoice-container {
+
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0px;
+    z-index: 1;
+}
+
+.new-invoice-content {
+
+    background-color: white;
+    width: 500px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 40px 40px 40px 40px;
+    text-align: left;
+    margin-left: 70px;
+}
+
+.new-invoice-content-dark-theme {
+
+    background-color: #141625;
+}
+
+.new-invoice-title-modal {
+
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 30px;
+}
+
+.new-invoice-title-modal-dark-theme {
+
+    color: white;
+}
+
+.bill-form,
+.bill-to {
+
+    font-family: "Spartan";
+    color: #7c5dfa;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    margin-bottom: 20px;
+}
+
+.bill-to {
+
+    margin-top: 20px;
+}
+
+.bill-from-street-address-title,
+.bill-from-description,
+.bill-to-description,
+.clients-name,
+.clients-email-description,
+.bill-to-street-address-description,
+.invoice-date-descripton,
+.payment-terms-description,
+.project-description-description {
+
+    font-family: "Spartan";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.25;
+    color: #7c5dfa;
+    margin-bottom: 7px;
+}
+
+.bill-from-street-address-title-dark-theme,
+.bill-from-description-dark-theme,
+.clients-name-dark-theme,
+.clients-email-description-dark-theme,
+.bill-to-street-address-description-dark-theme,
+.bill-to-description-dark-theme,
+.invoice-date-descripton-dark-theme,
+.payment-terms-description-dark-theme,
+.project-description-description-dark-theme {
+
+    color: #DFE3FA;
+}
+
+.bill-from-street-address-input,
+.bill-from-input,
+.bill-to-input,
+.clients-name-input,
+.clients-email-input,
+.bill-to-street-address-input,
+.project-description-input {
+
+    border-radius: 3px;
+    width: 96%;
+    border: 1px solid #d9d2f8;
+    padding: 10px 10px 10px 10px;
+    font-family: "Spartan";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    margin-bottom: 20px;
+}
+
+.clients-email-input-dark-theme,
+.bill-from-street-address-input-dark-theme,
+.bill-from-input-dark-theme,
+.clients-name-input-dark-theme,
+.bill-to-street-address-input-dark-theme,
+.bill-to-input-dark-theme,
+.project-description-input-dark-theme {
+
+    background-color: #1E2139 !important; 
+    border: none;
+}
+
+.bill-from-city-post-country,
+.bill-to-city-post-code-country {
+
+    display: flex;
+    gap: 20px;
+}
+
+.bill-from-input,
+.bill-to-input {
+
+    width: 86.5%;
+}
+
+
+.payment-terms {
+
+    position: relative;
+    z-index: 1;
+}
+
+.invoice-date-payment-terms {
+
+    display: flex;
+    gap: 20px;
+
+    position: relative;
+}
+
+.invoice-date-input,
+.payment-terms-input {
+
+    border-radius: 3px;
+    width: 221px;
+    border: 1px solid #d9d2f8;
+    padding: 8px;
+    font-family: "Spartan";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    margin-bottom: 20px;
+    
+}
+
+.invoice-date {
+
+    position: relative;
+    z-index: 10;
+}
+
+.cal {
+
+    position: relative;
+    z-index: 5;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(0);
+}
+
+.payment-terms-input {
+
+    padding: 7px 10px;
+    background-image: url("../css/assets/icon-arrow-down.svg");
+    background-position: 95% center; /*Positioning*/
+    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+}
+
+.payment-terms-option {
+
+    margin-left: 15px;
+}
+
+.payment-options {
+
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(72, 84, 159, 0.25);
+    border-radius: 8px;
+
+    color: #0C0E16;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.payment-option {
+
+    padding: 10px 10px 10px 25px;
+    border-bottom: 1px solid rgba(72, 84, 159, 0.25);
+}
+
+.payment-option:hover {
+    color: #9277FF;
+    cursor: pointer;
+}
+
+.payment-option:last-child {
+
+    border-bottom: none;
+}
+
+.item-list-title {
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.38px;
+    color: #777F98;
+    margin-bottom: 20px;
+}
+
+.item-name-qty-price-total {
+
+    display: flex;
+}
+
+.item-name-description,
+.qty-description,
+.price-description,
+.total-description {
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    color: #7e88c3;
+}
+
+.item-name-description-dark-theme,
+.qty-description-dark-theme,
+.price-description-dark-theme,
+.total-description-dark-theme {
+
+    color: #DFE3FA;
+}
+ 
+.item-name-container {
+
+    width: 250px;
+}
+
+.qty-container {
+
+    width: 58px;
+}
+
+.price-container {
+
+    width: 100px;
+}
+
+.total-container {
+
+    width: 40px;
+}
+
+.add-new-item-container {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #f1f3fc;
+    padding: 2% 2% 2% 2%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.add-new-item-container-dark-theme {
+
+    background-color: #252945;
+}
+
+.add-new-item-title {
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: #7e88c3;
+}
+
+.add-new-item-title-dark-theme {
+
+    color: #DFE3FA;
+}
+
+.discard-save-as-draft-save-send-container {
+
+    display: flex;
+    align-items: center;
+}
+
+.discard {
+
+    background-color: #f1f3fc;
+    padding: 3% 5% 3% 5%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.discard-title {
+
+    font-size: 12px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+    color: #7e88c3;
+}
+
+.save-as-draft {
+
+    background-color: #373B53;
+    padding: 2.5% 3% 2.5% 3%;
+    border-radius: 20px;
+    margin-left: 33%;
+    cursor: pointer;
+}
+
+.save-as-draft-title {
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: #888eb0;
+}
+
+.save-and-send {
+
+    padding: 2.5% 3% 2.5% 3%;
+    border-radius: 20px;
+    background-color: #7C5DFA;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.save-and-send-title {
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: white;
+}
+
+.all-fields-must-be-added {
+
+    color: #EC5757;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: -0.21;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.red-text {
+
+    color: #EC5757;
+}
+
+.red-border {
+
+    border: 1px solid #EC5757;
+}
+
+.hash-tag-edit-invoice {
+
+    color: #888EB0;
+    font-size: 24px;
+}
+
+.cancel-save {
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cancel-edit-invoice {
+
+    background-color: #f1f3fc;
+    padding: 2.5% 3% 2.5% 3%;
+    border-radius: 20px;
+    /* margin-left: 33%; */
+    cursor: pointer;
+    color: #7E88C3;
+    font-size: 12px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+}
+
+.save-edit-invoice {
+
+    padding: 2.5% 3% 2.5% 3%;
+    border-radius: 20px;
+    background-color: #7C5DFA;
+    margin-left: 2%;
+    cursor: pointer;    
+    color: white;
+    font-size: 12px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+}
+
+.payment-terms-input-dark-theme {
+
+    color: white;
+    background-color: #252945;
+    border: none;
+}
+
+.payment-options-input-dark-theme {
+
+    color: #DFE3FA;
+    background-color: #252945;
+}
+
+.project-description-input::placeholder {
+    
+    color: grey;
+    opacity: 0.3;
+}
+
+.clients-email-input::placeholder {
+
+    color: grey;
+    opacity: 0.2;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .new-invoice-content {
+
+        margin-left: 0;
+        margin-top: 70px;
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .new-invoice-content {
+
+        width: 88%;
+        border-radius: 0;
+        padding: 6% 6% 6% 6%;
+    }
+
+    .go-back-container {
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .arrow-left-go-back {
+
+        width: 7px;
+        height: 10px;
+        margin-right: 17px;
+    }
+
+    .go-back {
+
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: -0.25px;
+        color: #0c0e16;
+    }
+
+    .bill-from-street-address-input, 
+    .bill-from-input, 
+    .bill-to-input, 
+    .clients-name-input, 
+    .clients-email-input, 
+    .bill-to-street-address-input, 
+    .project-description-input {
+        
+        border-radius: 3px;
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        font-family: "Spartan";
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: -0.25px;
+        margin-bottom: 20px;
+    }
+
+    .bill-from-city-post-country {
+
+        display: grid;
+        grid-template-areas: 
+        "city postCode"
+        "country country";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bill-from-city {
+
+        grid-area: city;
+        width: 100%;
+    }
+
+    .bill-from-post-code {
+
+        grid-area: postCode;
+        width: 100%;
+    }
+
+    .bill-from-country {
+
+        grid-area: country;
+        position: relative;
+        bottom: 15px;
+    }
+
+    .bill-to-city-post-code-country {
+
+        display: grid;
+        grid-template-areas: 
+        "toCity toPostCode"
+        "toCountry toCountry";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bill-to-city {
+
+        grid-area: toCity;
+    }
+
+    .bill-to-post-code {
+
+        grid-area: toPostCode;
+    }
+
+    .bill-to-country {
+
+        grid-area: toCountry;
+        position: relative;
+        bottom: 15px;
+    }
+
+    .invoice-date-payment-terms {
+
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+    }
+
+    .invoice-date-input, .payment-terms-input {
+
+        width: 100%;
+        padding: 10px 0 10px 0;
+    }
+
+    .discard-save-as-draft-save-send-container {
+
+        justify-content: center;
+    }
+
+    .save-as-draft {
+
+        margin-left: 2%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .save-and-send {
+
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .item-name-container {
+
+        width: 36%;
+    }
+
+    .qty-container {
+
+        width: 20%;
+    }
+
+    .price-container {
+
+        width: 80px;
+    }
+}

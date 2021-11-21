@@ -1,0 +1,135 @@
+
+.menu-container {
+
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    flex-direction: column;
+    width: 70px;
+    height: 100vh;
+    background-color: #373B53;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.logo-container {
+
+    width: 100%;
+    height: 70px;
+    background-color: #7C5DFA;
+    text-align: center;
+}
+
+.logo-img {
+
+    position: relative;
+    top: 20px;
+    z-index: 1;
+}
+
+.logo-container-lighter {
+
+    position: relative;
+    width: 100%;
+    height: 35px;
+    top: 2px;
+    background-color: #8c74f0;
+    border-top-left-radius: 20px;
+}
+
+.avatar-and-moon {
+
+    text-align: center;
+}
+ 
+.dark-light {
+
+    width: 20px;
+    height: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.dark-light:hover {
+
+    filter: invert(98%) sepia(0%) saturate(8%) hue-rotate(170deg) brightness(200%) contrast(103%);
+
+}
+
+.avatar-image-container {
+
+    width: 70px;
+    height: 70px;
+    border-top: 1px solid #504f4f;
+    text-align: center;
+}
+
+.img-avatar {
+
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .menu-container {
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 70px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .logo-container {
+    
+        width: 70px;
+        height: 100%;
+        margin-right: auto;
+        background-color: #7C5DFA;
+        text-align: center;
+    }
+    
+    .logo-img {
+    
+        position: relative;
+        top: 20px;
+        z-index: 1;
+    }
+    
+    
+    .avatar-and-moon {
+    
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 130px;
+    }
+    
+    .dark-light {
+    
+        width: 20px;
+        height: 20px;
+        margin-top: 25px;
+    }
+    
+    .avatar-image-container {
+    
+        width: 80px;
+        height: 70px;
+        border-left: 1px solid #5a5959;
+    }
+    
+    .img-avatar {
+    
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+    }
+}
