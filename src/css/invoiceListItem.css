@@ -1,0 +1,241 @@
+
+.invoice-list-item-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 650px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 7px;
+    padding: 2% 2% 2% 2%;
+}
+
+.id-payment-due-name {
+
+    display: flex;
+    align-items: center;
+}
+
+.hash-tag {
+
+    color: #7E88C3;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+
+.id {
+
+    margin-right: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+
+.payment-due {
+
+    margin-right: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    color: #888EB0;
+}
+
+.name {
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    color: #888EB0;
+}
+
+.total-status-arrow {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.paid {
+
+    font-size: 12px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf8f4;
+    color: #33d69f;
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.paid-dark {
+
+    background-color: #263532;
+}
+
+
+.pending {
+
+    font-size: 12px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #faeddb;
+    color: #FF8F00;
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px;
+    width: 100px;    
+}
+
+
+.pending-dark {
+
+    background-color: #46423f;
+}
+
+.pending-circle {
+
+    width: 8px;
+    height: 8px;
+    background-color: #FF8F00;
+    border-radius: 50px;
+    margin-right: 5px;    
+}
+
+.paid-circle {
+
+    width: 8px;
+    height: 8px;
+    background-color: #33d69f;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.draft {
+
+    font-size: 12px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e7fa;
+    color: #373B53;
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.draft-dark {
+
+    background-color: #373B53;
+    color: #afafaf;
+}
+
+.draft-circle {
+
+    width: 8px;
+    height: 8px;
+    background-color: #373B53;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.draft-circle-dark {
+
+    background-color: #afafaf;
+}
+
+.total {
+
+    font-size: 16px;
+    letter-spacing: -0.8px;
+    font-weight: 700;
+    margin-right: 25px;
+}
+
+.arrow-right {
+
+    width: 7px;
+    height: 10px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.invoice-list-item-container-dark-theme {
+
+    background-color: #1E2139;
+}
+.invoice-list-item-dark-theme {
+
+    color: white;
+}
+
+.invoice-list-item-dark-light-shade {
+
+    color: #DFE3FA;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .invoice-list-item-container {
+
+        width: 90%;
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .invoice-list-item-container {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .arrow-right {
+
+        display: none;
+    }
+
+    .id-payment-due-name {
+
+        display: grid;
+        justify-items: start;
+        grid-template-areas: 
+        "id name"
+        "date .";
+        gap: 5px;
+        width: 270px;
+    }
+
+    .id {
+
+        grid-area: id;
+    }
+
+    .name {
+
+        grid-area: name;
+    }
+
+    .payment-due {
+
+        grid-area: date;
+        position: relative;
+        top: 20px;
+    }
+
+    .total-status-arrow {
+
+        width: 270px;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}

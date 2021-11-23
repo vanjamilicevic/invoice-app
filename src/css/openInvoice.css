@@ -1,0 +1,500 @@
+
+.single-invoice-container {
+
+    width: 700px;
+    margin: auto;
+}
+
+.go-back-container-open-invoice {
+
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.arrow-left-open-invoice {
+
+    width: 7px;
+    height: 10px;
+    margin-right: 15px;
+    margin-bottom: 3px;
+}
+
+.go-back-title-open-invoice {
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: #7e88c3;
+}
+
+.edit-delete-mark-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 7px;
+    margin-top: 23px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.05);
+}
+
+.edit-delete-mark-container-dark-theme {
+
+    background-color: #1E2139;
+
+}
+
+.status-title-and-status-open-invoice {
+
+    display: flex;
+    align-items: center;
+}
+
+.status-title-open-invoice {
+
+    font-size: 12px;
+    letter-spacing: -0.25px;
+    font-weight: 500;
+    color: #858bb2;
+}
+
+.status-title-open-invoice-dark-theme {
+
+    color: #DFE3FA;
+}
+
+.paid-open-invoice {
+
+    font-size: 12px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf8f4;
+    color: #33d69f;
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px;
+    width: 80px;
+    margin-left: 10px;
+}
+
+.paid-open-invoice-dark-theme {
+
+    background-color: #263532;
+}
+
+.pending-open-invoice {
+
+    font-size: 12px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #faeddb;
+    color: #FF8F00;
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px;
+    width: 90px;
+    margin-left: 10px;    
+}
+
+.pending-open-invoice-dark-theme {
+
+    background-color: #46423f;
+}
+
+.pending-circle-open-invoice {
+
+    width: 8px;
+    height: 8px;
+    background-color: #FF8F00;
+    border-radius: 50px;
+    margin-right: 5px;    
+}
+
+.paid-circle-open-invoice {
+
+    width: 8px;
+    height: 8px;
+    background-color: #33d69f;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.draft-open-invoice {
+
+    font-size: 12px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e7fa;
+    color: #373B53;
+    padding: 5% 5% 5% 5%;
+    border-radius: 5px;
+    width: 80px;
+    margin-left: 10px;
+}
+
+.draft-open-invoice-dark-theme {
+
+    background-color: #373B53;
+    color: #afafaf;
+}
+
+.draft-circle-open-invoice {
+
+    width: 8px;
+    height: 8px;
+    background-color: #373B53;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.draft-circle-open-invoice-dark-theme {
+
+    background-color: #afafaf;
+}
+
+.edit-delete-mark-desktop {
+
+    display: flex;
+}
+
+.edit-delete-mark-mobile {
+
+    display: none;
+}
+
+.edit {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eff0fa;
+    padding: 3% 3% 3% 3%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 13px 20px 13px 20px;
+    cursor: pointer;
+}
+
+.edit:hover {
+
+    background-color: #c5c5c5
+}
+
+.edit-dark-theme {
+
+    background-color: #252945;
+    color: #DFE3FA;
+}
+
+.edit-dark-theme:hover {
+
+    color: #7e88c3;
+    background-color: white;
+}
+
+.edit-title {
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: #7e88c3;
+}
+
+.delete {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EC5757;
+    margin-left: 5px;
+    border-radius: 30px;
+    padding: 13px 20px 13px 20px;
+    cursor: pointer;
+}
+
+.delete:hover {
+
+    background-color: #ff9797;
+}
+
+.delete-title {
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: white;
+}
+
+.mark-as-paid {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7C5DFA;
+    margin-left: 5px;
+    width: 120px;
+    border-radius: 30px;
+    padding: 13px 2% 13px 2%;
+    cursor: pointer;
+}
+
+.mark-as-paid:hover {
+
+    background-color: #7e88c3;
+}
+
+.mark-as-paid-title {
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: white;
+}
+
+.open-invoice-content-container {
+
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 25px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.05);
+    padding: 5% 5% 5% 5%;
+}
+
+.open-invoice-content-container-dark-theme {
+
+    background-color: #1E2139;
+}
+
+.id-description-adress-data {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.id-open-invoice {
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    color: #0c0e16;
+    margin-bottom: 7px;
+}
+
+.id-open-invoice-dark-theme {
+
+    color: white;
+}
+
+.hash-tag-open-invoice {
+
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+    color: #888eb0;
+}
+
+.description-open-invoice,
+.invoice-date-title-open-invoice,
+.payment-due-title-open-invoice,
+.bill-to-title-open-invoice,
+.bill-to-street-open-invoice,
+.bill-to-city-open-invoice,
+.bill-to-post-code-open-invoice,
+.bill-to-country-open-invoice,
+.sent-to-open-invoice {
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    color: #7e88c3;
+}
+
+.description-open-invoice-dark-theme,
+.invoice-date-title-open-invoice-dark-theme,
+.payment-due-title-open-invoice-dark-theme,
+.bill-to-title-open-invoice-dark-theme,
+.bill-to-street-open-invoice-dark-theme,
+.bill-to-city-open-invoice-dark-theme,
+.bill-to-post-code-open-invoice-dark-theme,
+.bill-to-country-open-invoice-dark-theme,
+.sent-to-open-invoice-dark-theme {
+
+    color: #DFE3FA;
+}
+
+.invoice-date-title-open-invoice,
+.payment-due-title-open-invoice,
+.bill-to-title-open-invoice,
+.sent-to-open-invoice {
+
+    margin-bottom: 7px;
+}
+
+.invoice-date-open-invoice,
+.payment-due-open-invoice,
+.bill-to-name-open-invoice,
+.email-open-invoice {
+
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.31px;
+    color: #0c0e16;
+}
+
+.invoice-date-open-invoice-dark-theme,
+.payment-due-open-invoice-dark-theme,
+.bill-to-name-open-invoice-dark-theme,
+.email-open-invoice-dark-theme {
+
+    color: white;
+}
+
+.bill-to-name-open-invoice {
+
+    margin-bottom: 5px;
+}
+
+.adress-bill-from-open-invoice {
+
+    text-align: right;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: -0.23px;
+    color: #7e88c3;
+}
+
+.date-due-bill-to-sent-container-open-invoice {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.dates-and-bill-to-container-open-invoice {
+
+    display: flex;
+}
+
+.invoice-date-open-invoice {
+
+    margin-right: 50px;
+    margin-bottom: 24px;
+}
+
+.sent-to-email-open-invoice {
+
+    margin-right: 40px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .go-back-container-open-invoice {
+
+        margin-top: 120px;
+    }
+
+    .single-invoice-container {
+
+        width: 90%;
+    }
+
+    .delete {
+
+        background-color: #EC5757;
+    }
+
+    .mark-as-paid {
+
+        background-color: #7C5DFA;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .invoice-date-open-invoice {
+
+        margin-right: 30px;
+    }
+
+    .id-description-adress-data {
+
+        flex-direction: column;
+    }
+
+    .adress-bill-from-open-invoice {
+
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .id-and-description {
+
+        margin-bottom: 30px;
+    }
+
+    .date-due-bill-to-sent-container-open-invoice {
+
+        flex-direction: column;
+    }
+
+    .dates-and-bill-to-container-open-invoice {
+
+        margin-bottom: 30px;
+    }
+
+    .edit-delete-mark-desktop {
+
+        display: none;
+    }
+
+    .edit-delete-mark-container {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .status-title-and-status-open-invoice {
+
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .pending-open-invoice {
+
+        padding: 3.5% 2% 3.5% 2%;
+    }
+
+    .edit-delete-mark-mobile {
+
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        margin-top: 10px;
+        padding: 5% 5% 5% 5%;
+    }
+
+    .edit-delete-mark-mobile-dark-theme {
+
+        background-color: #1E2139;
+    }
+
+    .delete {
+
+        margin-left: 0;
+    }
+
+    .mark-as-paid {
+
+        margin-left: 0;
+    }
+}

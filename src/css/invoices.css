@@ -1,0 +1,316 @@
+
+.invoices{
+
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+
+    position: relative;
+}
+
+.invoices-title {
+
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.description-long {
+
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    color: #888eb0;
+}
+
+.description-short {
+
+    display: none;
+}
+
+.filter-and-new-invoice {
+
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.filter-title-long {
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+    color: #0c0e16;
+    margin-right: 7px;
+}
+
+.filter-title-short {
+
+    display: none;
+}
+
+.arrow-down {
+
+    width: 12px;
+    height: 8px;
+}
+
+.new-invoice {
+
+    display: flex;
+    align-items: center;
+    background-color: #9277FF;
+    border-radius: 30px;
+    padding: 3% 3% 3% 3%;
+    width: 140px;
+    cursor: pointer;
+}
+
+.new-title {
+
+    display: none;
+}
+
+.plus {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 8% 8% 8% 8%;
+    margin-right: 12px;
+}
+
+.new-invoice-title {
+
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+
+.invoices-dark-theme {
+
+    color: white;
+}
+
+.filter-options {
+
+    position: absolute;
+    top: 70px;
+    margin-left: -30px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(72, 84, 159, 0.25);
+    border-radius: 8px;
+
+    padding: 15px 50px 20px 25px;
+}
+
+.filter-options-dark-theme {
+
+    background-color: #252945;
+}
+
+.filter-option {
+
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.check-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DFE3FA;
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    border: 1px solid #DFE3FA;
+}
+
+.check-container-dark-theme {
+
+    background-color: #1E2139;
+}
+
+.check-container:hover {
+
+    border: 1px solid #7C5DFA;
+}
+
+.checkbox-text {
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -0.25px;
+}
+
+.checkbox-text-dark-theme {
+
+    color: white;
+}
+
+.fa-check {
+
+    color: white !important;
+}
+
+.draft-active {
+
+    background-color: #7C5DFA;
+}
+
+.pending-active {
+
+    background-color: #7C5DFA;
+}
+
+.paid-active {
+
+    background-color: #7C5DFA;
+}
+
+.arrow-rotated {
+
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 900px) {
+
+    .invoices{
+
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .invoices{
+
+        width: 90%;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    .invoices-title {
+
+        font-size: 20px;
+        letter-spacing: -0.63px;
+    }
+
+    .description-long {
+
+        display: none;
+    }
+
+    .description-short {
+
+        display: block;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: -0.25px;
+        color: #888eb0;
+    }
+
+    .filter {
+
+        justify-content: flex-end;
+    }
+
+    .filter-title-long {
+
+        display: none;
+    }
+
+    .filter-title-short {
+
+        display: block;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: -0.25px;
+        color: #0c0e16;
+        margin-right: 7px;
+    }
+
+    .filter-title-short-dark-theme {
+
+        color: white;
+    }
+
+    .filter-options {
+
+        margin-right: -40px;
+        margin-top: -10px;
+    }
+
+    .new-invoice {
+
+        width: 90px;
+    }
+
+    .plus {
+
+        width: 17px;
+        margin-right: 5px;
+    }
+
+    .new-invoice-title {
+
+        display: none;
+    }
+
+    .new-title {
+
+        display: block;
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: -0.25px;
+        width: 50px;
+        margin-right: 7px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+
+    .new-invoice {
+
+        width: 60px;
+    }
+
+    .plus {
+
+        padding: 0% 10% 0% 10%;
+        margin-right: 0px;
+    }
+
+    .filter {
+
+        margin-right: 5px;
+        width: auto;
+    }
+
+    .new-title {
+
+        margin-right: 0px;
+    }
+}
